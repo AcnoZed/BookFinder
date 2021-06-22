@@ -1,4 +1,3 @@
-
 class BookFinderApp():
 
     def method(self):
