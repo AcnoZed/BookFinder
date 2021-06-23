@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
         <title>Homepage</title>
     </head>
-    <body>
-        <div>
-            <h3> Plan für Homepage: </h3>
+    
+    <main>
+        <div class="container">
             <p>
-                -Text: Erklärung für Anwendung, Vorwort von mir
-                -Anwendung: InputFeld -> Animation(Ladesymbol) -> Kachel mit Antworten
+                <h2>BookFinderApp</h2>
             </p>
         </div>
-    </body>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>
+                                <h4>Explanation</h4>
+                            </p>
+                            <br>
+                            <p>
+                                Enter everything you know about your book
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="/home" method="POST">
+                                <div class="form-group">
+                                    <label for="title">Book Title</label>
+                                    <input type="text" class="form-control" id="title" placeholder="Title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="author">Book Author</label>
+                                    <input type="text" class="form-control" id="author" placeholder="Author">
+                                </div>
+                                <div class="form-group">
+                                    <label for="genre">Book Genre</label>
+                                    <input type="text" class="form-control" id="genre" placeholder="Genre">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
 </html>
