@@ -13,3 +13,6 @@ class Book:
 
     def get_genre(self):
         return self.genre
+
+    def printBook(self):
+        print(self.title, self.author, self.genre)
