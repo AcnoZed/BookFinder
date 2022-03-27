@@ -1,7 +1,7 @@
 class BookDB:
 
     books = []
-    def __init__(self, book):
+    def __init__(self, book=None):
         self.books.append(book)
     
     def add(self, book):
@@ -9,4 +9,3 @@ class BookDB:
     
     def get_books(self):
         return self.books
-        
